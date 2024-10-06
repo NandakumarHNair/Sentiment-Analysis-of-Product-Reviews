@@ -1,0 +1,11 @@
+
+## Requirements
+- pandas
+- scikit-learn
+- nltk
+
+## How to Run
+1. Clone the repository
+2. Install the required libraries using `pip install -r requirements.txt`
+3. Run the `src/sentiment_analysis.py` script
+4. Check the results in `sentiment_predictions.csv`

@@ -1,0 +1,20 @@
+data = {
+    'ReviewID': range(1, 11),
+    'ProductID': [101, 102, 103, 104, 105, 106, 107, 108, 109, 110],
+    'Review': [
+        'This product is amazing! I loved it.', 
+        'Not worth the money. Very disappointing.', 
+        'Average quality, nothing special.', 
+        'Excellent value for money!', 
+        'Poor build quality.', 
+        'Great product, highly recommend.', 
+        'Terrible customer service.', 
+        'Five stars! Very satisfied.', 
+        'The product stopped working after a week.', 
+        'Happy with the purchase, will buy again.'
+    ],
+    'Sentiment': ['positive', 'negative', 'neutral', 'positive', 'negative', 'positive', 'negative', 'positive', 'negative', 'positive']
+}
+
+df_reviews = pd.DataFrame(data)
+df_reviews.to_csv('/mnt/data/product_reviews.csv', index=False)
